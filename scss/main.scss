@@ -406,11 +406,16 @@ text-align: center;
 
 //////////////////////////////////640+ 
 @media(min-width:640px){
+    .service__item-inner{
+        padding: 5px 0px;
+     }
  .service{
  padding: 40px 0 40px;
  text-align: center;
 
  &__items{
+    min-height: 100%;
+    max-height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -461,8 +466,8 @@ text-align: center;
 
  &__item{
      max-width: 100%;
-     flex:0 0 50%;
-     padding: 0 18px;
+     flex:1 1 50%;
+     padding: 0 5px;
      min-height: 310px;
      border: 1px solid $color;
      border-bottom: none;
@@ -500,6 +505,7 @@ text-align: center;
  }
 
  &__item:hover{
+    width: 25%;
  .service__item-link{
   display: block;
   font-size: 16px;
@@ -518,12 +524,13 @@ text-align: center;
  }
  .service__item-inner{
      border: 4px solid $accent;
-     margin: 18px 0;
-     padding: 5px 0px;
+     margin: 5px 0;
+     padding: 0px 0px;
      min-height: 277px;
  }
 
  }
+ 
 .service__item-img{
          margin-top: 20px;
      }
@@ -568,7 +575,7 @@ text-align: center;
    
 }
 &__item{
-    padding: 0 18px;
+    padding: 0 5px;
     min-height: 310px;
     border: 1px solid $color;
     border-bottom: none;
@@ -581,9 +588,9 @@ text-align: center;
 }
 @media(min-width:1024px){
     .service{   
-
+        padding: 0 0;
         &__item{
-        flex:0 0 25%;
+        flex:1 1 25%;
         &:nth-child(2n+1){
             border-left: none;
             border-right:1px solid $color ;
@@ -595,13 +602,11 @@ text-align: center;
             border-right:none ;
         }
                 }
-        padding: 60px 0;
         &__text{
             width: 60%;
         }
         &__title{
-            margin-top: 60px;
-            margin-bottom: 75px;
+            margin-bottom: 25px;
         }
         &__descr{
             font-size: 26px;
@@ -611,18 +616,23 @@ text-align: center;
 }
 @media(min-width:1440px){
     .service{
+        padding: 0 0;
         .container{
             padding: 0 0;
   
         }
-        padding: 60px 0;
+        padding: 0 0;
         &__inner{
             display: flex;
+
         }
         &__head{
             
             width: 35%;
             align-items: flex-start;
+        }
+        &__items{
+            width: 65%;
         }
         &__item{
             flex:0 0 25%;
