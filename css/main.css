@@ -13,7 +13,7 @@
   font-weight: 500;
 }
 
-.service__item-title, .service__item:hover .service__item-link {
+.service__item-title, .service__item:hover .service__item-link, .projects__item-link {
   font-family: 'Roboto Condensed bold';
   font-weight: 700;
 }
@@ -86,7 +86,7 @@
   font-weight: 500;
 }
 
-.service__item-title, .service__item:hover .service__item-link {
+.service__item-title, .service__item:hover .service__item-link, .projects__item-link {
   font-family: 'Roboto Condensed bold';
   font-weight: 700;
 }
@@ -891,6 +891,7 @@ p {
   }
   .service__title {
     margin-bottom: 25px;
+    margin-top: 52px;
   }
   .service__descr {
     font-size: 26px;
@@ -943,5 +944,136 @@ p {
     text-align: start;
     font-size: 26px;
     line-height: 26px;
+  }
+}
+
+.projects {
+  background-image: url("../img/Recent work.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 20px 0;
+}
+
+.projects__item {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.projects__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects__item-img {
+  min-height: 250px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.projects__title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.projects__title::after {
+  background-color: white;
+  bottom: -10px;
+}
+
+.projects__item-link {
+  color: #2B4074;
+  position: relative;
+  top: 15px;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 640px) {
+  .projects {
+    padding: 40px 0;
+  }
+  .projects__item {
+    padding: 0 25px;
+  }
+  .projects__item-img {
+    margin: 0 0;
+    min-height: 460px;
+  }
+  .projects__item-link {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .projects__title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .projects__title::after {
+    width: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .projects {
+    padding: 80px 0;
+    background-image: url("../img/Work.png");
+  }
+  .projects__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .projects__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+  .projects__item-img {
+    min-height: 280px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects {
+    background-image: url("../img/content.png");
+  }
+  .projects__items {
+    margin: 0 180px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .projects {
+    background-image: url("../img/mask.png");
+  }
+  .projects__items {
+    margin: 0 90px;
+  }
+  .projects__item {
+    padding: 0 12px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .projects__item-img {
+    min-height: 250px;
   }
 }

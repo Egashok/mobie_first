@@ -607,6 +607,7 @@ text-align: center;
         }
         &__title{
             margin-bottom: 25px;
+            margin-top: 52px;
         }
         &__descr{
             font-size: 26px;
@@ -660,4 +661,121 @@ text-align: center;
             line-height: 26px;
         }
     }
+}
+
+.projects{
+    background-image: url('../img/Recent work.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    padding: 20px 0;
+
+&__item{
+    margin: 20px 0;
+    text-align: center; 
+ }
+    
+
+&__items{
+    display: flex;
+    flex-direction: column;
+}
+
+&__item-img{
+    min-height: 250px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:contain;
+}
+&__title{
+    text-align: center;
+    color:#fff;
+    margin-bottom: 30px;
+    &::after{
+        background-color: white;
+        bottom: -10px;
+        
+    }
+}
+
+&__item-link{
+   color: $accent;
+   @extend %robotocondensed-700;
+   position: relative;
+   top: 15px;
+   font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    
+}
+
+}
+
+@media(min-width:640px){  
+    .projects{
+        padding: 40px 0;
+        &__item{
+        padding: 0 25px;
+        &-img{
+            margin: 0 0;
+            min-height: 460px;
+            }
+        &-link{
+            font-size: 20px;
+            line-height: 23px;
+        }
+        }
+        &__title{
+            font-size: 48px;
+            line-height: 56px;
+        }
+        &__title::after{
+            width: 100px;
+        }
+
+}   
+}
+@media(min-width:768px){
+    .projects{
+        padding: 80px 0;
+        background-image: url('../img/Work.png');
+        &__items{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &__item{
+            flex: 0 0 50%;
+            
+            &-img{
+                min-height: 280px;
+            }
+        }
+        
+       
+    }
+}
+@media(min-width:1024px){
+    .projects{
+        background-image: url('../img/content.png');
+    &__items{
+        margin: 0 180px;
+    }
+}
+}
+@media(min-width:1440px){
+    .projects{
+        background-image: url('../img/mask.png');
+    &__items{
+        margin: 0 90px;
+    }
+    &__item{
+        padding: 0 12px;
+        flex: 0 0 25%;
+        flex-direction: row;
+        &-img{
+            min-height: 250px;
+        }
+    }
+}
 }
