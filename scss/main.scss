@@ -671,8 +671,8 @@ text-align: center;
     padding: 20px 0;
 
 &__item{
-    margin: 20px 0;
-    text-align: center; 
+    margin: 20px 0; 
+    text-align: center;
  }
     
 
@@ -686,6 +686,7 @@ text-align: center;
     background-repeat: no-repeat;
     background-position: center center;
     background-size:contain;
+   
 }
 &__title{
     text-align: center;
@@ -707,6 +708,29 @@ text-align: center;
     line-height: 19px;
     letter-spacing: 2px;
     
+    
+
+    
+}
+.projects__item-inner{
+    display: none;
+    max-width:250px ;
+    
+}
+&__item:hover{
+    .projects__item-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 227px;
+    background-color: rgba($color: #F9F6E5, $alpha: 0.8);
+    
+    margin: 0 auto;
+    position: relative;
+    top: 15px;
+    
+    
+    }
 }
 
 }
@@ -732,7 +756,13 @@ text-align: center;
         &__title::after{
             width: 100px;
         }
-
+        &__item:hover{
+            .projects__item-inner{
+                min-height: 420px;
+                top:20px;
+                max-width:470px ;
+            }
+        }
 }   
 }
 @media(min-width:768px){
@@ -751,6 +781,13 @@ text-align: center;
                 min-height: 280px;
             }
         }
+        &__item:hover{
+            .projects__item-inner{
+                min-height: 240px;
+                top:20px;
+                max-width:270px ;
+            }
+        }
         
        
     }
@@ -761,9 +798,24 @@ text-align: center;
     &__items{
         margin: 0 180px;
     }
+    &__item-img{
+    max-width:280px ;
+    }
+    &__item:hover{
+        .projects__item-inner{
+            min-height: 220px;
+            top:30px;
+            max-width:260px ;
+        }
+    }
 }
 }
 @media(min-width:1440px){
+    .projects__item:hover .projects__item-inner {
+        min-height: 200px;
+        top: 20px;
+        max-width: 219px;
+    }
     .projects{
         background-image: url('../img/mask.png');
     &__items{
@@ -773,9 +825,22 @@ text-align: center;
         padding: 0 12px;
         flex: 0 0 25%;
         flex-direction: row;
+        min-height: 200px;
         &-img{
-            min-height: 250px;
+            min-height: 240px;
         }
+        &__item{
+            margin: 0;
+        min-height: 180px;
+        }
+        &__item:hover{
+            .projects__item-inner{
+                min-height: 220px;
+                top:30px;
+                max-width:220px ;
+            }
+        }  
     }
+   
 }
 }
