@@ -22,4 +22,23 @@ $(function () {
             }
         ]
     });
+    $('.quote__inner').slick({
+        dots: true,
+        arrows:false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+       
+        responsive: [
+    
+        ]
+    });
+  
 });
+function back(){
+    let button=$('.back');
+    button.on('click',(e)=>{
+        e.preventDefault();
+        $('html').animate({scrollTop:0},1000);
+    })
+}
+back();

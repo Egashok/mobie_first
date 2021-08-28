@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Dosis  light';
-    src: url('Dosis-Light.woff2') format('woff2'),
-        url('Dosis-Light.woff') format('woff');
+    src: url('../fonts/Dosis-Light.woff2') format('woff2'),
+        url('../fonts/Dosis-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Dosis';
-    src: url('Dosis-Medium.woff2') format('woff2'),
-        url('Dosis-Medium.woff') format('woff');
+    src: url('../fonts/Dosis-Medium.woff2') format('woff2'),
+        url('../fonts/Dosis-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'Roboto Condensed regular';
-    src: url('RobotoCondensed-Regular.woff2') format('woff2'),
-        url('RobotoCondensed-Regular.woff') format('woff');
+    src: url('../fonts/RobotoCondensed-Regular.woff2') format('woff2'),
+        url('../fonts/RobotoCondensed-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'Roboto-Medium';
-    src: url('Roboto-Medium.woff2') format('woff2'),
-        url('Roboto-Medium.woff') format('woff');
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/Roboto-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -36,16 +36,16 @@
 
 @font-face {
     font-family: 'Roboto Condensed bold';
-    src: url('RobotoCondensed-Bold.woff2') format('woff2'),
-        url('RobotoCondensed-Bold.woff') format('woff');
+    src: url('../fonts/RobotoCondensed-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoCondensed-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Roboto-regular';
-    src: url('Roboto-Regular.woff2') format('woff2'),
-        url('Roboto-Regular.woff') format('woff');
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
